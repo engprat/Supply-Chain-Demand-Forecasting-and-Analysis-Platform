@@ -1,0 +1,8 @@
+logs/forecast_results.csv
+/__pycache__/
+*.pyc
+Chatbot_Conversation.txt
+data/processed/
+data/raw/data/
+node_modules/
+src/forecast_ui/

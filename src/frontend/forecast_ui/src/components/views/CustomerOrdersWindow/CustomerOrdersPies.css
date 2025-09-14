@@ -1,0 +1,23 @@
+.cozp-wrap { padding: 12px 14px 20px; color: #eaeef5; }
+.cozp-head { display:flex; justify-content:space-between; align-items:end; gap:16px; margin-bottom:8px; }
+.cozp-head h2 { margin:0 0 4px; font-size:20px; font-weight:700; }
+.cozp-head .sub { font-size:12px; opacity:.75; }
+.cozp-head .note { font-size:12px; opacity:.75; }
+
+.cozp-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:14px; }
+.cozp-card { background:#0f1115; border:1px solid #1e2230; border-radius:14px; padding:8px 10px 12px; box-shadow:0 6px 18px rgba(0,0,0,.35); }
+.cozp-card .title { font-weight:600; font-size:14px; margin:6px 6px 8px; color:#cfd6e4; }
+.cozp-card .chart { height:320px; }
+
+.cozp-tip { background:rgba(18,21,28,.95); border:1px solid #2a3042; color:#e6e9f2; padding:8px 10px; border-radius:8px; font-size:12px; }
+.cozp-tip .row { display:flex; align-items:center; gap:6px; }
+.cozp-tip .row.num { margin-top:2px; font-variant-numeric:tabular-nums; }
+.cozp-tip .dot { width:10px; height:10px; border-radius:50%; }
+
+.cozp-center-label { fill:#dbe4ff; font-size:12px; font-weight:600; }
+.cozp-center-value { fill:#9fb3ff; font-size:11px; }
+
+.cozp-state { padding:10px 12px; background:#0f1115; border:1px solid #1e2230; border-radius:12px; }
+.cozp-error { border-color:#632b2b; background:#1a0f10; }
+
+.recharts-legend-wrapper { max-height: 90px !important; overflow-y: auto !important; }

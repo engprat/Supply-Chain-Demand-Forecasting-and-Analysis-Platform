@@ -1,0 +1,335 @@
+/* Scenario Panel Container */
+.scenario-panel {
+  background: var(--white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--gray-200);
+  transition: all var(--transition-normal);
+}
+
+.scenario-panel:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.panel-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.panel-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--gray-800);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Scenario Controls */
+.scenario-controls {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.slider-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--gray-700);
+  margin-bottom: 0.25rem;
+}
+
+/* Custom Slider Styling */
+.slider {
+  -webkit-appearance: none;
+  appearance: none; /* Standard property for compatibility */
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--gray-200);
+  outline: none;
+  transition: all var(--transition-fast);
+  margin: 10px 0;
+}
+
+/* Slider Thumb */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Temperature Slider */
+.slider.temperature::-webkit-slider-thumb {
+  background: #ef4444;
+  border: 2px solid #dc2626;
+}
+
+.slider.temperature:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}
+
+/* Inflation Slider */
+.slider.inflation::-webkit-slider-thumb {
+  background: #8b5cf6;
+  border: 2px solid #7c3aed;
+}
+
+.slider.inflation:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+}
+
+/* Discount Slider */
+.slider.discount::-webkit-slider-thumb {
+  background: #10b981;
+  border: 2px solid #059669;
+}
+
+.slider.discount:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+/* Price Slider */
+.slider.price::-webkit-slider-thumb {
+  background: #3b82f6;
+  border: 2px solid #2563eb;
+}
+
+.slider.price:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Slider Track */
+.slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  background: var(--gray-200);
+}
+
+/* Firefox */
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: none;
+  box-shadow: var(--shadow-sm);
+}
+
+.slider.temperature::-moz-range-thumb {
+  background: #ef4444;
+  border: 2px solid #dc2626;
+}
+
+.slider.inflation::-moz-range-thumb {
+  background: #8b5cf6;
+  border: 2px solid #7c3aed;
+}
+
+.slider.discount::-moz-range-thumb {
+  background: #10b981;
+  border: 2px solid #059669;
+}
+
+.slider.price::-moz-range-thumb {
+  background: #3b82f6;
+  border: 2px solid #2563eb;
+}
+
+/* Slider Hover Effects */
+.slider:hover {
+  opacity: 0.9;
+}
+
+.slider:active {
+  transform: scale(1.01);
+}
+
+/* Responsive Grid */
+.grid-4 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.form-checkbox {
+  width: 1.125rem;
+  height: 1.125rem;
+  border: 1px solid #999;
+  border-radius: 3px;
+  appearance: none;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.form-checkbox:checked {
+  background-color: #1976d2;
+  border-color: #1976d2;
+}
+
+.form-checkbox:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 0.75rem;
+}
+
+/* Scenario Actions */
+.scenario-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  border: none;
+  gap: 0.5rem;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.btn:hover::after {
+  opacity: 1;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--primary-blue-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background-color: var(--gray-100);
+  color: var(--gray-700);
+  font-weight: 500;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: var(--gray-200);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .scenario-panel {
+    padding: 1.25rem;
+  }
+  
+  .scenario-controls {
+    gap: 1.25rem;
+  }
+  
+  .scenario-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+}
+
+/* Animation for loading state */
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+.loading {
+  animation: pulse 1.5s ease-in-out infinite;
+  pointer-events: none;
+}

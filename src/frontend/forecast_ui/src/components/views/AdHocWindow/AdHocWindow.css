@@ -1,0 +1,133 @@
+/* AdHocWindow.css */
+
+.results-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #28a745;
+}
+
+.results-header {
+  margin-bottom: 1rem;
+}
+
+.results-title {
+  color: #28a745;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.results-content {
+  background: white;
+  border-radius: 6px;
+  padding: 1.5rem;
+  border: 1px solid #dee2e6;
+}
+
+.adjustment-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.summary-item label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.summary-item span {
+  font-size: 1rem;
+  color: #212529;
+  padding: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+}
+
+.summary-item .new-value {
+  background: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+  font-weight: 600;
+}
+
+/* Additional styles for AdHocForecastControl preview */
+.adjustment-preview {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.adjustment-preview h4 {
+  margin: 0 0 0.5rem 0;
+  color: #495057;
+  font-size: 1rem;
+}
+
+.preview-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+}
+
+.current-value {
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.arrow {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.new-value {
+  font-weight: bold;
+  color: #28a745;
+}
+
+.change-value {
+  color: #6c757d;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-input[type="textarea"] {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .adjustment-summary {
+    grid-template-columns: 1fr;
+  }
+  
+  .preview-row {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .arrow {
+    transform: rotate(90deg);
+  }
+}

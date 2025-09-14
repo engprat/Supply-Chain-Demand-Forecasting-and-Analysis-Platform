@@ -1,0 +1,47 @@
+feature,importance
+qty_rolling_mean_7,22709
+qty_roll14,21327
+qty_trend_14,19180
+qty_rolling_std_7,18298
+qty_cv_28,12660
+qty_lag_7,12116
+qty_lag_1,11425
+revenue_rolling_mean_7,10505
+revenue_rolling_std_7,10032
+temperature,9492
+revenue_lag_7,8566
+revenue_lag_1,8454
+city_encoded,7918
+humidity,6995
+order_day,6383
+order_day_of_week,5419
+order_month,4430
+category_encoded,2196
+discount_percent_lag_1,1720
+order_year,1450
+prev_spike_7,1251
+is_weekend,573
+days_since_pos_order,328
+quarter,324
+price_ratio_28,120
+is_month_end,73
+is_month_start,36
+price_lag_1,0
+is_promo_day,0
+disc_pct,0
+is_late,0
+zero_share_28,0
+zero_streak,0
+inflation,0
+on_hand_qty,0
+days_of_supply,0
+stockout_flag,0
+backorder_qty,0
+delivery_status_Shipping on time,0
+delivery_status_Shipping canceled,0
+delivery_status_On-time full,0
+delivery_status_Late or partial,0
+delivery_status_Late delivery,0
+country_USA,0
+customer_type_Enterprise,0
+channel_Retail,0
