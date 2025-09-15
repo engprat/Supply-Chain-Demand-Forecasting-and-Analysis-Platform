@@ -55,9 +55,13 @@ Provide accurate, explainable demand forecasts and customer-level order predicti
 ## 4) Problem Statement
 Traditional forecasting often stops at SKU or channel totals and struggles to incorporate promo effects, stockouts, or fast-changing signals. Planners need daily, customer-level forecasts with:
 - Controls to filter by customer/product/city and apply thresholds (min qty / percentile)
+  
 - Separation of base demand vs. promo-lift
+  
 - Aggregations/drill-downs across hierarchy levels
+  
 - Scenario testing for “what-if” changes
+  
 - All of this must be automated, reproducible, and API-driven for downstream use.
 
 ## 5) Data & Inputs
